@@ -1,0 +1,32 @@
+# gitignore template for esp-idf, the official development framework for ESP32
+# https://github.com/espressif/esp-idf
+
+# Build artifacts
+build/
+*.o
+*.pyc
+
+# Configuration files
+sdkconfig
+sdkconfig.old
+.config
+
+# Dependency management files
+managed_components
+dependencies.lock
+.component_hash
+
+# IDE/Editor specific files (adjust as needed)
+.vscode/
+.clangd/
+.ccls-cache/
+.settings/
+*~
+.#*
+\#*#
+
+# OS generated files
+.DS_Store
+
+# Documentation build artifacts (if applicable)
+docs/*/_build/
